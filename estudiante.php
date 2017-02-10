@@ -5,33 +5,19 @@ class Estudiante
     private $id;
     private $nombre;
     private $parcial;
-    private $finall;
+    private $final;
     private $mejoramiento;
     private $aprueba;
     
-     function __construct($id, $nombre, $parcial , $finall, $mejoramiento ,$aprueba) {
+     function __construct($id, $nombre, $parcial , $final, $mejoramiento ,$aprueba) {
        $this->id = $id;
        $this->nombre = $nombre;
        $this->parcial = $parcial;
-         $this->finall = $finall;
+         $this->final = $final;
          $this->mejoramiento = $mejoramiento;
          $this->aprueba = $aprueba;
      }
-    function __construct($id, $nombre, $parcial , $finall, $mejoramiento) {
-       $this->id = $id;
-       $this->nombre = $nombre;
-       $this->parcial = $parcial;
-       $this->finall = $finall;
-       $this->mejoramiento = $mejoramiento;
-     }
-    function __construct() {
-       $this->id = $id;
-       $this->nombre = $nombre;
-       $this->parcial = $parcial;
-         $this->finall = $finall;
-         $this->mejoramiento = $mejoramiento;
-         $this->aprueba = $aprueba;
-     }
+
     
      function setid($id){
        $this->id = $id;
@@ -51,11 +37,11 @@ class Estudiante
      function getparcial(){
        return $this->parcial;
      } 
-    function setfinall($finall){
+    function setfinal($finall){
        $this->finall = $finall;
      } 
-     function getfinall(){
-       return $this->finall;
+     function getfinal(){
+       return $this->final;
      } 
     function setmejoramiento($mejoramiento){
        $this->mejoramiento = $mejoramiento;

@@ -15,19 +15,21 @@ $estudianteCollectorObj = new estudiantecollector();
 <div>
 <table>
 <?php
-foreach ($estudianteCollectorObj->showestudiantes() as $c){
+foreach ($estudianteCollectorObj->showestudiante() as $c){
   echo "<tr>";
   echo "<td>" . $c->getid() . "</td>
   <td>&ensp; " . $c->getNombre() . "</td>
   <td>&ensp; " . $c->getparcial() . "</td>
-  <td> <a href = 'delete_estudiante.php?id=" . $c->getIdestudiante() . "'> <button> Editar </button></a></td> <td><a href 
-= 'delete_estudiante.php?id=". $c->getIdestudiante() ."'><button> Eliminar </button></a></td>"  ;
+  <td>&ensp; ". $c->getfinal() . "</td>
+  <td>&ensp; ". $c->getmejoramiento() . "</td>
+  <td>&ensp; ". $c->getaprueba() . "</td>
+  <td>&ensp; ";
+      
   echo "</tr>";
 }
 ?>
 </table>
 </div>
-<a href = "save_estudiante.php">Crear Nuevo Usuario</a>
-<a href = "logout.php">Salir</a>
+
 </body>
 </html>
